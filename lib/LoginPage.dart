@@ -8,26 +8,17 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: ListView(
-          shrinkWrap: true,
+        child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Row(
           children: <Widget>[
-            SizedBox(height: 50,),
             Header(),
-            SizedBox(height: 50,),
-            Align(
-              alignment: Alignment.centerLeft,
-              child :Container(
-                margin: new EdgeInsets.only(
-                  left: 30.0,
-                ),
-                child: Text("Login to your account", style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
-              ),
-            ),
             Expanded(child: Container(
               child: InputWrapper(),
             )),
           ],
         ),
+      ),
       ),
     );
   }

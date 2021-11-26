@@ -101,7 +101,6 @@ class _IntroScreenState extends State<IntroScreen> {
           margin: EdgeInsets.only(bottom: 60.0, top: 60.0),
           child: ListView(
             children: <Widget>[
-              SizedBox(height: 70,),
               GestureDetector(
                   child: Image.asset(
                     currentSlide.pathImage!,
@@ -109,7 +108,7 @@ class _IntroScreenState extends State<IntroScreen> {
                     height: 200.0,
                     fit: BoxFit.contain,
                   )),
-              SizedBox(height: 60,),
+              SizedBox(height: 20,),
               Container(
                 child: Text(
                   currentSlide.title!,

@@ -11,6 +11,15 @@ class InputField extends State<InputFieldMain> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
+        SizedBox(height: 25,),
+        Align(
+          alignment: Alignment.center,
+          child: Container(
+            child: Text(
+              "Login to Your Account", style: TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold),),
+          ),
+        ),
+        SizedBox(height: 60,),
         Align(
           alignment: Alignment.centerLeft,
           child: Container(
@@ -30,7 +39,7 @@ class InputField extends State<InputFieldMain> {
             ),
           ),
         ),
-        SizedBox(height: 50,),
+        SizedBox(height: 20,),
         Align(
           alignment: Alignment.centerLeft,
           child: Container(
@@ -55,7 +64,15 @@ class InputField extends State<InputFieldMain> {
             ),
             obscureText: _secureText,
           ),
-        )
+        ),
+        SizedBox(height: 25,),
+        Align(
+          alignment: Alignment.centerRight,
+          child: Container(
+            child: Text(
+              "Forgot Password ?", style: TextStyle(color: Colors.black, fontSize: 15),),
+          ),
+        ),
       ],
     );
   }

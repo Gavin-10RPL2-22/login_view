@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.login_view">
    <application
-        android:label="login_view"
+        android:label="Kievit Office"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
